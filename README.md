@@ -1,1 +1,1 @@
-# The Man from San Jose
+# Man from San Jose
