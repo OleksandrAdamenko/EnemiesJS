@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Header from "./components/layout/Header";
+import Main from "./components/layout/Main";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
           <Header />
           <main className="pt-16">
-            {/* Your content */}
+            <Main />
           </main>
         </div>
       </BrowserRouter>
