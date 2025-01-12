@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Если хотите добавить кастомные стили для Radix */
-.radix-themes {
-  --default-font-family: system-ui, sans-serif;
+html, body {
+  overflow: hidden;
 }
