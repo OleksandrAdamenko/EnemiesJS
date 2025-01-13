@@ -1,13 +1,11 @@
 // src/components/ui/CategoryFilter.jsx
-const CategoryFilter = ({ currentCategory, onCategoryChange }) => {
-    const categories = ['All', 'Mapping', 'Technical', 'Analysis', 'Reserves'];
-  
+const CategoryFilter = ({ categories, currentCategory, onCategoryChange }) => {
     return (
-      <div className="flex justify-end gap-2 mb-6 overflow-x-auto pb-2">
+      <div className="flex justify-end gap-2 overflow-x-auto pb-4">
         {categories.map((category) => (
           <button
-            key={category}
-            onClick={() => onCategoryChange(category.toLowerCase())}
+            key={category.id}
+            onClick={() => onCategoryChange(category.id)}
             className={`
               px-4 
               py-2 
@@ -16,13 +14,13 @@ const CategoryFilter = ({ currentCategory, onCategoryChange }) => {
               text-sm
               whitespace-nowrap
               transition-colors
-              ${currentCategory === category.toLowerCase()
+              ${currentCategory === category.id
                 ? 'bg-blue-600 text-white'
                 : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'
               }
             `}
           >
-            {category}
+            {category.label}
           </button>
         ))}
       </div>

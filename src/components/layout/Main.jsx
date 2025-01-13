@@ -1,72 +1,50 @@
 // src/components/layout/Main.jsx
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ImageGrid from '../ui/ImageGrid';
 import CategoryFilter from '../ui/CategoryFilter';
+import { images, categories } from '../../data/images';
 
 const Main = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [currentCategory, setCurrentCategory] = useState('all');
 
-  const images = [
-    {
-      thumb: 'src/assets/images/thumbnails/map1-thumb.jpg',
-      thumbWebp: 'src/assets/images/thumbnails/map1-thumb.webp',
-      full: 'src/assets/images/optimized/map1.jpg',
-      fullWebp: 'src/assets/images/optimized/map1.webp',
-      title: 'Geological Map of Region A',
-      category: 'Mapping'
-    },
-    {
-      thumb: 'src/assets/images/thumbnails/map2-thumb.jpg',
-      thumbWebp: 'src/assets/images/thumbnails/map2-thumb.webp',
-      full: 'src/assets/images/optimized/map2.jpg',
-      fullWebp: 'src/assets/images/optimized/map2.webp',
-      title: 'Geological Map of Region B',
-      category: 'Mapping'
-    },
-    {
-      thumb: 'src/assets/images/thumbnails/tech1-thumb.jpg',
-      thumbWebp: 'src/assets/images/thumbnails/tech1-thumb.webp',
-      full: 'src/assets/images/optimized/tech1.jpg',
-      fullWebp: 'src/assets/images/optimized/tech1.webp',
-      title: 'Geological Map of Region A',
-      category: 'Technical'
-    },
-    {
-      thumb: 'src/assets/images/thumbnails/tech2-thumb.jpg',
-      thumbWebp: 'src/assets/images/thumbnails/tech2-thumb.webp',
-      full: 'src/assets/images/optimized/tech2.jpg',
-      fullWebp: 'src/assets/images/optimized/tech2.webp',
-      title: 'Geological Map of Region A',
-      category: 'Technical'
-    },
-    {
-      thumb: 'src/assets/images/thumbnails/plan1-thumb.jpg',
-      thumbWebp: 'src/assets/images/thumbnails/plan1-thumb.webp',
-      full: 'src/assets/images/optimized/plan1.jpg',
-      fullWebp: 'src/assets/images/optimized/plan1.webp',
-      title: 'Geological Map of Region A',
-      category: 'Reserves'
-    },
-    {
-      thumb: 'src/assets/images/thumbnails/plan2-thumb.jpg',
-      thumbWebp: 'src/assets/images/thumbnails/plan2-thumb.webp',
-      full: 'src/assets/images/optimized/plan2.jpg',
-      fullWebp: 'src/assets/images/optimized/plan2.webp',
-      title: 'Geological Map of Region A',
-      category: 'Reserves'
-    },  
-  ];
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <div className="container mx-auto px-4 py-6">
-      <CategoryFilter 
-        currentCategory={currentCategory}
-        onCategoryChange={setCurrentCategory}
-      />
-      <ImageGrid 
-        images={images} 
-        category={currentCategory}
-      />
+    <div className="h-[calc(100vh-64px)] pt-[12px] max-w-7xl mx-auto flex flex-col"> {/* h-[calc(100vh-64px)] для вычета высоты header */}
+      {/* Фиксированный блок с фильтрами */}
+      <div className={`
+        sticky pt-[12px] 
+        bg-white dark:bg-gray-900 
+        z-30 
+        transition-colors duration-200
+        ${isScrolled ? 'shadow-md' : ''}
+      `}>
+        <div className="container mx-auto px-4">
+          <CategoryFilter 
+            categories={categories}
+            currentCategory={currentCategory}
+            onCategoryChange={setCurrentCategory}
+          />
+        </div>
+      </div>
+
+      {/* Прокручиваемый контент с карточками */}
+      <div className="flex-1 overflow-y-auto">
+        <div className="container mx-auto px-4 py-4">
+          <ImageGrid 
+            images={images} 
+            category={currentCategory}
+          />
+        </div>
+      </div>
     </div>
   );
 };

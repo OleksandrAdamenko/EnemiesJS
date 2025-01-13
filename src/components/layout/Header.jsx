@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 h-16 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 transition-colors duration-200">
-      <div className="h-full px-4 mx-auto max-w-7xl flex justify-between items-center">
+      <div className="h-full container mx-auto px-4 flex justify-between items-center">
         {/* Left section - Avatar and Name */}
         <div className="flex items-center gap-3">
           <img
