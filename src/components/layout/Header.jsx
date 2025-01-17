@@ -25,6 +25,7 @@ const Header = () => {
 
         {/* Right section - Action buttons */}
         <div className="flex items-center gap-2">
+          {/*
           <button 
             onClick={() => setIsAboutOpen(true)}
             className="p-2 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors duration-200"
@@ -38,6 +39,7 @@ const Header = () => {
           >
             <Mail className="h-[20px] w-[20px]" />
           </button>
+          */}
 
           <a 
             href="https://www.linkedin.com/in/aleksandr-adamenko-81620a28b/" 
