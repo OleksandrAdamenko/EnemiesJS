@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Info, Mail, Linkedin } from 'lucide-react';
+import { Info, Mail, Linkedin, Moon, Sun } from 'lucide-react';
 import ThemeSwitcher from '../ui/ThemeSwitcher';
 import About from '../modals/About';
 import Feedback from '../modals/Feedback';
