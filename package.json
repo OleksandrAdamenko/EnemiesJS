@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.1",
   "type": "module",
+  "homepage": "https://oleksandradamenko.github.io/OleksandrAdamenko",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
