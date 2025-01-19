@@ -19,15 +19,15 @@ import tech2Webp from '../assets/images/optimized/tech2.webp';
 import tech2Thumb from '../assets/images/thumbnails/tech2-thumb.jpg';
 import tech2ThumbWebp from '../assets/images/thumbnails/tech2-thumb.webp';
 
-import graph1 from '../assets/images/optimized/Graph1.jpg';
-import graph1Webp from '../assets/images/optimized/Graph1.webp';
-import graph1Thumb from '../assets/images/thumbnails/Graph1-thumb.jpg';
-import graph1ThumbWebp from '../assets/images/thumbnails/Graph1-thumb.webp';
+import graph1 from '../assets/images/optimized/graph1.jpg';
+import graph1Webp from '../assets/images/optimized/graph1.webp';
+import graph1Thumb from '../assets/images/thumbnails/graph1-thumb.jpg';
+import graph1ThumbWebp from '../assets/images/thumbnails/graph1-thumb.webp';
 
-import graph2 from '../assets/images/optimized/Graph2.jpg';
-import graph2Webp from '../assets/images/optimized/Graph2.webp';
-import graph2Thumb from '../assets/images/thumbnails/Graph2-thumb.jpg';
-import graph2ThumbWebp from '../assets/images/thumbnails/Graph2-thumb.webp';
+import graph2 from '../assets/images/optimized/graph2.jpg';
+import graph2Webp from '../assets/images/optimized/graph2.webp';
+import graph2Thumb from '../assets/images/thumbnails/graph2-thumb.jpg';
+import graph2ThumbWebp from '../assets/images/thumbnails/graph2-thumb.webp';
 
 import plan1 from '../assets/images/optimized/plan1.jpg';
 import plan1Webp from '../assets/images/optimized/plan1.webp';
