@@ -1,43 +1,43 @@
 // src/data/images.js
-import map1 from '${import.meta.env.BASE_URL}/assets/images/optimized/map1.jpg';
-import map1Webp from '${import.meta.env.BASE_URL}/assets/images/optimized/map1.webp';
-import map1Thumb from '${import.meta.env.BASE_URL}/assets/images/thumbnails/map1-thumb.jpg';
-import map1ThumbWebp from '${import.meta.env.BASE_URL}/assets/images/thumbnails/map1-thumb.webp';
+import map1 from '../assets/images/optimized/map1.jpg';
+import map1Webp from '../assets/images/optimized/map1.webp';
+import map1Thumb from '../assets/images/thumbnails/map1-thumb.jpg';
+import map1ThumbWebp from '../assets/images/thumbnails/map1-thumb.webp';
 
-import map2 from '${import.meta.env.BASE_URL}/assets/images/optimized/map2.jpg';
-import map2Webp from '${import.meta.env.BASE_URL}/assets/images/optimized/map2.webp';
-import map2Thumb from '${import.meta.env.BASE_URL}/assets/images/thumbnails/map2-thumb.jpg';
-import map2ThumbWebp from '${import.meta.env.BASE_URL}/assets/images/thumbnails/map2-thumb.webp';
+import map2 from '../assets/images/optimized/map2.jpg';
+import map2Webp from '../assets/images/optimized/map2.webp';
+import map2Thumb from '../assets/images/thumbnails/map2-thumb.jpg';
+import map2ThumbWebp from '../assets/images/thumbnails/map2-thumb.webp';
 
-import tech1 from '${import.meta.env.BASE_URL}/assets/images/optimized/tech1.jpg';
-import tech1Webp from '${import.meta.env.BASE_URL}/assets/images/optimized/tech1.webp';
-import tech1Thumb from '${import.meta.env.BASE_URL}/assets/images/thumbnails/tech1-thumb.jpg';
-import tech1ThumbWebp from '${import.meta.env.BASE_URL}/assets/images/thumbnails/tech1-thumb.webp';
+import tech1 from '../assets/images/optimized/tech1.jpg';
+import tech1Webp from '../assets/images/optimized/tech1.webp';
+import tech1Thumb from '../assets/images/thumbnails/tech1-thumb.jpg';
+import tech1ThumbWebp from '../assets/images/thumbnails/tech1-thumb.webp';
 
-import tech2 from '${import.meta.env.BASE_URL}/assets/images/optimized/tech2.jpg';
-import tech2Webp from '${import.meta.env.BASE_URL}/assets/images/optimized/tech2.webp';
-import tech2Thumb from '${import.meta.env.BASE_URL}/assets/images/thumbnails/tech2-thumb.jpg';
-import tech2ThumbWebp from '${import.meta.env.BASE_URL}/assets/images/thumbnails/tech2-thumb.webp';
+import tech2 from '../assets/images/optimized/tech2.jpg';
+import tech2Webp from '../assets/images/optimized/tech2.webp';
+import tech2Thumb from '../assets/images/thumbnails/tech2-thumb.jpg';
+import tech2ThumbWebp from '../assets/images/thumbnails/tech2-thumb.webp';
 
-import graph1 from '${import.meta.env.BASE_URL}/assets/images/optimized/graph1.jpg';
-import graph1Webp from '${import.meta.env.BASE_URL}/assets/images/optimized/graph1.webp';
-import graph1Thumb from '${import.meta.env.BASE_URL}/assets/images/thumbnails/graph1-thumb.jpg';
-import graph1ThumbWebp from '${import.meta.env.BASE_URL}/assets/images/thumbnails/graph1-thumb.webp';
+import graph1 from '../assets/images/optimized/graph1.jpg';
+import graph1Webp from '../assets/images/optimized/graph1.webp';
+import graph1Thumb from '../assets/images/thumbnails/graph1-thumb.jpg';
+import graph1ThumbWebp from '../assets/images/thumbnails/graph1-thumb.webp';
 
-import graph2 from '${import.meta.env.BASE_URL}/assets/images/optimized/graph2.jpg';
-import graph2Webp from '${import.meta.env.BASE_URL}/assets/images/optimized/graph2.webp';
-import graph2Thumb from '${import.meta.env.BASE_URL}/assets/images/thumbnails/graph2-thumb.jpg';
-import graph2ThumbWebp from '${import.meta.env.BASE_URL}/assets/images/thumbnails/graph2-thumb.webp';
+import graph2 from '../assets/images/optimized/graph2.jpg';
+import graph2Webp from '../assets/images/optimized/graph2.webp';
+import graph2Thumb from '../assets/images/thumbnails/graph2-thumb.jpg';
+import graph2ThumbWebp from '../assets/images/thumbnails/graph2-thumb.webp';
 
-import plan1 from '${import.meta.env.BASE_URL}/assets/images/optimized/plan1.jpg';
-import plan1Webp from '${import.meta.env.BASE_URL}/assets/images/optimized/plan1.webp';
-import plan1Thumb from '${import.meta.env.BASE_URL}/assets/images/thumbnails/plan1-thumb.jpg';
-import plan1ThumbWebp from '${import.meta.env.BASE_URL}/assets/images/thumbnails/plan1-thumb.webp';
+import plan1 from '../assets/images/optimized/plan1.jpg';
+import plan1Webp from '../assets/images/optimized/plan1.webp';
+import plan1Thumb from '../assets/images/thumbnails/plan1-thumb.jpg';
+import plan1ThumbWebp from '../assets/images/thumbnails/plan1-thumb.webp';
 
-import plan2 from '${import.meta.env.BASE_URL}/assets/images/optimized/plan2.jpg';
-import plan2Webp from '${import.meta.env.BASE_URL}/assets/images/optimized/plan2.webp';
-import plan2Thumb from '${import.meta.env.BASE_URL}/assets/images/thumbnails/plan2-thumb.jpg';
-import plan2ThumbWebp from '${import.meta.env.BASE_URL}/assets/images/thumbnails/plan2-thumb.webp';
+import plan2 from '../assets/images/optimized/plan2.jpg';
+import plan2Webp from '../assets/images/optimized/plan2.webp';
+import plan2Thumb from '../assets/images/thumbnails/plan2-thumb.jpg';
+import plan2ThumbWebp from '../assets/images/thumbnails/plan2-thumb.webp';
 
 export const images = [
     {
