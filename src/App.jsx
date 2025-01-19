@@ -6,7 +6,7 @@ import Main from "./components/layout/Main";
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/OleksandrAdamenko">
         <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
           <Header />
           <main className="pt-16">
