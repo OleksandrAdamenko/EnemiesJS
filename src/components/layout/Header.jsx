@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import { Info, Mail, Linkedin, Sun, Moon } from 'lucide-react';
+import { Info, Mail, Linkedin } from 'lucide-react';
 import ThemeSwitcher from '../ui/ThemeSwitcher';
 import About from '../modals/About';
 import Feedback from '../modals/Feedback';
+
+import avatar from '../../assets/aleks_adams.jpg';
 
 const Header = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
@@ -14,7 +16,7 @@ const Header = () => {
         {/* Left section - Avatar and Name */}
         <div className="flex items-center gap-3">
           <img
-            src="src/assets/aleks_adams.jpg"
+            src={avatar}
             alt="AA"
             className="w-10 h-10 rounded-full object-cover cursor-pointer"
           />
