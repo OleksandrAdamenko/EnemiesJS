@@ -5,7 +5,9 @@ on:
     branches: [main]
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -22,6 +24,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist 
-          branch: gh-pages 
-          clean: true 
+          folder: dist
+          branch: gh-pages
+          clean: true
